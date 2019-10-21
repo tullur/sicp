@@ -16,3 +16,21 @@
 
 (+ 5 5 105)
 (+ 17 (+ 15 (* 5 (/ 105 5))))
+
+(+ (* 3
+      (+ (+ 3 3)
+         (+ 4 4)))
+   (+ (- 10 5)
+      6))
+
+(define zero 0)
+
+(* 5 zero)
+(+ 5 zero)
+(- zero zero)
+
+(define pi 3.14159)
+(define radius 10)
+
+(* pi (* radius radius))
+(define circumference (* 2 pi radius))
