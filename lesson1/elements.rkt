@@ -34,3 +34,21 @@
 
 (* pi (* radius radius))
 (define circumference (* 2 pi radius))
+
+(* (+ 1 (* 9 9))
+   (+ 2 (* 2 2 2)))
+
+(define (square x) (* x x))
+(square 5)
+(square 3)
+(square (+ 2 2))
+
+(define (sum-of-squares x y)
+  (+ (square x) (square y)))
+
+(sum-of-squares 2 6)
+
+(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+
+(f 5)
