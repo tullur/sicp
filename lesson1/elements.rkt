@@ -52,3 +52,17 @@
   (sum-of-squares (+ a 1) (* a 2)))
 
 (f 5)
+
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+
+(define (abs-o x)
+  (cond ((< x 0) (- x))
+        (else x)))
+
+(define (abs-i x)
+  (if (< x 0)
+      (- x)
+      x))
