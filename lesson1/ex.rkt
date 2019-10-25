@@ -1,7 +1,6 @@
 #lang racket
 
 ;; E 1.1
-
 10
 
 (+ 5 3 4)
@@ -37,3 +36,20 @@
 ;; Ex 1.2
 (/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5)))))
    (* 3 (- 6 2) (- 2 7)))
+
+;; Ex 1.3
+(define c 10)
+(+ (cond ((> a b) a)
+         ((> b c) b)
+         ((> c a) c))
+   (* a a) (* b b))
+
+
+;; Ex 1.4
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -)
+   a
+   b))
+
+(a-plus-abs-b 5 5)
+(a-plus-abs-b 5 -5)
