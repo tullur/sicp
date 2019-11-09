@@ -1,6 +1,7 @@
 #lang racket
 
 (displayln "Hello, World!")
+(displayln "123")
 
 123
 456
